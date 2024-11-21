@@ -1,6 +1,6 @@
-#illustrating misdeading R^2 as a measure of quality of fit 
+#illustrating misleading R^2 as a measure of quality of fit 
 
-pdf(file="Fig4ReadMe.pdf")
+png(file="Fig4ReadMe.png")
 
 par(mfrow=c(2,2),mar=c(4,4,3,0.2))
 set.seed(123)
