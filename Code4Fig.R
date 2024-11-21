@@ -1,5 +1,7 @@
 #illustrating misdeading R^2 as a measure of quality of fit 
 
+pdf(file="Fig4ReadMe.pdf")
+
 par(mfrow=c(2,2),mar=c(4,4,3,0.2))
 set.seed(123)
 n<-100
@@ -40,3 +42,5 @@ xs<-rnorm(100,mean=x[points_on_circle],sd=0.08)
 ys<-rnorm(100,mean=y[points_on_circle],sd=0.08)
 plot(xs,ys, pch = 19,main=paste0("R2=",round(cor(ys,xs),3)))
 abline(lm(ys~xs))
+
+dev.off()
